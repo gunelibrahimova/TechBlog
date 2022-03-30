@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jQXUiHmPIZQzcpxEO6o0hRvp2mYEp/zwGkR7AZbMDWs=",
+  "Hash": "8om89Nb1uxmKY0cy4lowPcEC/c4wMELrT9wDaOIOYb0=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -37196,6 +37196,23 @@
       "OriginalItemSpec": "wwwroot\\files\\43c9f8e5-7d97-4a46-b123-b615efd795fdpexels-photo-1461974.jpeg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\K205TechBlog-master\\Web\\wwwroot\\files\\68fe3984-e029-4d62-9f3f-b72d4e181fd8banner-left-img.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Tasks\\K205TechBlog-master\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "files/68fe3984-e029-4d62-9f3f-b72d4e181fd8banner-left-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\68fe3984-e029-4d62-9f3f-b72d4e181fd8banner-left-img.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\K205TechBlog-master\\Web\\wwwroot\\files\\7e0df4ff-e1ae-4dda-a7bd-78dbdefcd254pexels-photo-1461974.jpeg",
       "SourceId": "Web",
       "SourceType": "Discovered",
@@ -37211,6 +37228,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\7e0df4ff-e1ae-4dda-a7bd-78dbdefcd254pexels-photo-1461974.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Tasks\\K205TechBlog-master\\Web\\wwwroot\\files\\9ddefc47-3e4c-4dd2-b6df-0c04a3821025banner-left-img.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Tasks\\K205TechBlog-master\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "files/9ddefc47-3e4c-4dd2-b6df-0c04a3821025banner-left-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\9ddefc47-3e4c-4dd2-b6df-0c04a3821025banner-left-img.png"
     }
   ]
 }

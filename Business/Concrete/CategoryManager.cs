@@ -32,6 +32,6 @@ namespace Business.Concrete
             return category;
         }
 
-
+       
     }
 }

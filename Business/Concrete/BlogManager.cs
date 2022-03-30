@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Business.Abstract;
 using DataAccess;
 using Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace Business.Concrete
@@ -17,6 +18,7 @@ namespace Business.Concrete
         public BlogManager(BlogDbContext context)
         {
             _context = context;
+            
         }
 
         public void Create(Blog blog)
@@ -35,10 +37,25 @@ namespace Business.Concrete
 
         public Blog GetById(int? id)
         {
+            //var cookie = Request.Cookie["Key"];
             var blog = _context.Blogs.FirstOrDefault(x=>x.ID == id.Value);
             blog.Hit += 1;
             Update(blog);
             return blog;
+        }
+
+        public string SeoURL(string link)
+        {
+           var seolink = _context.Blogs.FirstOrDefault(x=>x.SeoURL == link);
+            if(seolink != null)
+            {
+                return seolink.SeoURL;
+            }
+            else
+            {
+                return link;
+            }
+           
         }
 
         public void Update(Blog blog)

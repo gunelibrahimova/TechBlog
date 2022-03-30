@@ -833,3 +833,5 @@ C:\Users\HP\Desktop\Tasks\K205TechBlog-master\Web\obj\Debug\net6.0\scopedcss\pro
 C:\Users\HP\Desktop\Tasks\K205TechBlog-master\Web\obj\Debug\net6.0\Web.csproj.CopyComplete
 C:\Users\HP\Desktop\Tasks\K205TechBlog-master\Web\obj\Debug\net6.0\Web.genruntimeconfig.cache
 C:\Users\HP\Desktop\Tasks\K205TechBlog-master\Web\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutAuth.cshtml.rz.scp.css
+C:\Users\HP\Desktop\Tasks\K205TechBlog-master\Web\bin\Debug\net6.0\Core.dll
+C:\Users\HP\Desktop\Tasks\K205TechBlog-master\Web\bin\Debug\net6.0\Core.pdb
