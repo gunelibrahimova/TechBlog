@@ -30,6 +30,7 @@ builder.Services.ConfigureApplicationCookie(option =>
 
 builder.Services.AddScoped<ICategoryManager, CategoryManager>();
 builder.Services.AddScoped<IBlogManager, BlogManager>();
+builder.Services.AddScoped<ICommentManager, CommentManager>();
 
 
 var app = builder.Build();

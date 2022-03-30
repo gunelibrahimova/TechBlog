@@ -38,7 +38,7 @@ namespace Business.Concrete
         public Blog GetById(int? id)
         {
             //var cookie = Request.Cookie["Key"];
-            var blog = _context.Blogs.FirstOrDefault(x=>x.ID == id.Value);
+            var blog = _context.Blogs.Include(x=>x.Category).Include(x=>x.K205User).FirstOrDefault(x=>x.ID == id.Value);
             blog.Hit += 1;
             Update(blog);
             return blog;
@@ -55,7 +55,12 @@ namespace Business.Concrete
             {
                 return link;
             }
-           
+        }
+
+        public List<Blog> Similar(int catId, string userId, int blogId)
+        {
+            var similarblog = _context.Blogs.OrderByDescending(x => x.Hit).Include(x=>x.Category).Include(x=>x.K205User).Where(x=>x.CategoryID == catId && x.K205UserId == userId && x.ID != blogId).Take(2).ToList();
+            return similarblog;
         }
 
         public void Update(Blog blog)

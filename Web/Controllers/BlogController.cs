@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Web.ViewModel;
 
@@ -8,21 +10,31 @@ namespace Web.Controllers
     {
         private readonly IBlogManager _blogManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly UserManager<K205User> _userManager;
+        private readonly ICommentManager _commentManager;
 
 
-        public BlogController(IBlogManager blogManager, IHttpContextAccessor httpContextAccessor)
+        public BlogController(IBlogManager blogManager, IHttpContextAccessor httpContextAccessor, UserManager<K205User> userManager, ICommentManager commentManager)
         {
             _blogManager = blogManager;
             _httpContextAccessor = httpContextAccessor;
+            _userManager = userManager;
+            _commentManager = commentManager;
         }
 
         public IActionResult Detail(int? id)
         {
+            var blog = _blogManager.GetById(id);
+            
             BlogSingleVM vm = new()
             {
-                BlogSingle = _blogManager.GetById(id),
+                BlogSingle = blog,
+                User = _userManager.FindByIdAsync(blog.K205UserId).Result,
+                Similar = _blogManager.Similar(blog.CategoryID, blog.K205UserId, blog.ID),
+                Comments = _commentManager.GetBlogComment(blog.ID)
 
-            };
+
+        };
             return View(vm);
         }
     }
